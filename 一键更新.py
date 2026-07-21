@@ -84,8 +84,7 @@ def upload_file(repo_path, local_path):
 # 上传 index.html（网页内容）
 upload_file('index.html', os.path.join(BASE, 'index.html'))
 
-# 上传 CSV（数据源备份，可选）
-upload_file('素材维度分析_完整大表.csv', os.path.join(BASE, '素材维度分析_完整大表.csv'))
+# 注意：CSV 含公司业务数据，不上传到公开仓库，仅在本地保留
 
 # ============ 完成 ============
 print()
